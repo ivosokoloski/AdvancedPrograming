@@ -1,108 +1,20 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-import java.util.LinkedList;
+
+
 class ResizableArray <T>{
-    private final T[] arrayList;
-    private int capacity;
-    public ResizableArray(){
-        this.arrayList= (T[])  new Object[capacity];
-        capacity=0;
-    };
-    public void addElement(T element){
-        arrayList[capacity++]=element;
+      private T [] pole;
 
-    };
-    public boolean removeElement(T element) {
-        for (int i = 0; i < capacity; i++) {
-            if (arrayList[i].equals(element)) {
-                for (int j = i; j < capacity - 1; j++) {
-                    arrayList[j] = arrayList[j + 1];
-                }
-                arrayList[capacity - 1] = null;
-                capacity--;
-                return true;
-            }
-        }
-        return false;
+    public ResizableArray() {
+        this.pole = (T[]) new Object[];
     }
-
-    public boolean  contains(T element){
-        for (T t : arrayList) {
-            if(t.equals(element)){
-                return true;
-            }
-        }
-        return false;
-    }
-    public T[] toArray(){
-        return this.arrayList;
-    }
-    public boolean isEmpty(){
-        return this.arrayList.length==0;
-    }
-    public int count(){
-        return arrayList.length;
-    }
-    public T elementAt(int idx){
-        if(arrayList[idx]!=null){
-            return arrayList[idx];
-        }else {
-            throw new ArrayIndexOutOfBoundsException();
-        }
-    }
-    public static <T> void copyAll(ResizableArray<? super T> dest, ResizableArray<? extends T> src){
-        for(int i=0;i<src.arrayList.length;i++){
-            dest.arrayList[dest.capacity++]= src.elementAt(i);
-        }
-    }
-
-
 }
 
-class IntegerArray extends ResizableArray<Integer>{
 
-    public IntegerArray() {
-        super();
-    }
 
-    public double sum(){
-        double finalsum=0;
-        for (int i=0;i<count();i++){
-            finalsum+=elementAt(i);
-        }
-        return finalsum;
-    }
-    public double mean(){
-        return this.sum()/this.count();
-    }
-   public int countNonZero(){
-       int finalsum=0;
-       for (int i=0;i<count();i++){
-           if(elementAt(i)==0){
-               finalsum+=elementAt(i);
 
-           }
-       }
-       return finalsum;
-   }
-   public IntegerArray distinct(){
-        IntegerArray copy=new IntegerArray();
-        for(int i=0;i<count();i++){
-            if(!copy.contains(this.elementAt(i))){
-                copy.addElement(elementAt(i));
-            }
-        }
-        return copy;
-   }
-    public IntegerArray increment(int offset){
-        IntegerArray copy=new IntegerArray();
-        for(int i=0;i<count();i++){
-            copy.addElement(elementAt(i)+offset);
-        }
-        return copy;
-    }
-}
+
+
+
 
 
 public class ResizableArrayTest {

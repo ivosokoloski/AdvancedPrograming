@@ -1,30 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac90adbe-fa65-4026-95ed-2a76d317eb1d" name="Changes" comment="" />
+    <list default="true" id="ac90adbe-fa65-4026-95ed-2a76d317eb1d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AdvancedPrograming.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ComplexNumberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/F1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HealthyMealstest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InterestBearingAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Kalkulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MovieTheaterTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ResizableArrayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SchedulerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shapes1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StudentRecordsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TasksManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="34LT1eig8raR6YTCkooJQvqKTi2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/HP/IdeaProjects/AdvancedPrograming/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HealthyMealstest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Kalkulator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocalDateTimeTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocalTimeTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ResizableArrayTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Shapes1Test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/HP/IdeaProjects/AdvancedPrograming/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.HealthyMealstest">
+    <configuration name="HealthyMealstest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HealthyMealstest" />
+      <module name="AdvancedPrograming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HealthyMealstest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HealthyMealstest" />
+      <module name="AdvancedPrograming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocalTimeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LocalTimeTest" />
+      <module name="AdvancedPrograming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocalTimeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LocalTimeTest" />
+      <module name="AdvancedPrograming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HealthyMealstest" />
+        <item itemvalue="Application.LocalTimeTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -41,7 +133,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760991640961</updated>
-      <workItem from="1760991642017" duration="1000" />
+      <workItem from="1760991642017" duration="4940000" />
+      <workItem from="1761077722862" duration="6000" />
+      <workItem from="1761776411570" duration="3710000" />
+      <workItem from="1762283610583" duration="14685000" />
+      <workItem from="1762812873566" duration="5368000" />
+      <workItem from="1763059671256" duration="34029000" />
+      <workItem from="1764178140665" duration="144000" />
+      <workItem from="1764190175509" duration="250000" />
     </task>
     <servers />
   </component>
@@ -51,12 +150,15 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

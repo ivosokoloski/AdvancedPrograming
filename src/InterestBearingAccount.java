@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
 public interface InterestBearingAccount {
+    public void addInterest();
 }

@@ -1,4 +1,3 @@
-import java.time.LocalDateTime;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -7,89 +6,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
-import java.util.Comparator;
-
- class Timestamp<T> {
-    private final LocalDateTime time;
-    private final T element;
-
-    public Timestamp(LocalDateTime time, T element) {
-        this.time = time;
-        this.element = element;
-    }
-    public LocalDateTime getTime(){
-        return time;
-    }
-    public T getElement(){
-        return element;
-    }
-    public int compareTo(Timestamp<?> t){
-        return this.time.compareTo(t.time);
-    }
-    public boolean equals(Object o){
-        Timestamp<?> other = (Timestamp<?>) o;
-        return time.equals(other.time);
-    }
-
-    @Override
-    public String toString() {
-        String string = time + " " + element;
-        return string;
-    }
-}
-class Scheduler<T>{
-    List<Timestamp<T>> timestamps;
-
-    public Scheduler() {
-        this.timestamps = new ArrayList<>();
-    }
-    public void add(Timestamp<T> t){
-        timestamps.add(t);
-    }
-    public boolean remove(Timestamp<T> t){
-        for (Timestamp<T> timestamp : timestamps) {
-            if(timestamp==t){
-                timestamps.remove(timestamp);
-                return true;
-            }
-        }
-        return false;
-
-    }
-    public Timestamp<T> next(){
-        Timestamp<T> result=null;
-        LocalDateTime now = LocalDateTime.now();
-        for (Timestamp<T> t : timestamps) {
-            if (t.getTime().isAfter(now)) {
-                if (result == null || t.getTime().isBefore(result.getTime())) {
-                    result = t;
-                }
-            }
-        }
-        return result;
-    }
-    public Timestamp<T> last(){
-        Timestamp<T> result=null;
-        LocalDateTime now = LocalDateTime.now();
-        for (Timestamp<T> t : timestamps) {
-            if (!t.getTime().isAfter(now)) {
-                if (result == null || t.getTime().isAfter(result.getTime())) {
-                    result = t;
-                }
-            }
-        }
-        return result;
-    }
-    public List<Timestamp<T>> getAll(LocalDateTime begin, LocalDateTime end){
-        List<Timestamp<T>> result= new ArrayList<>();
-        for (Timestamp<T> t : timestamps) {
-            if(t.getTime().isAfter(begin)&&t.getTime().isBefore(end)){
-                result.add(t);
-            }
-        }
-        return result;
-    }
-}
 
 public class SchedulerTest {
 
@@ -198,3 +114,88 @@ public class SchedulerTest {
 
 // vashiot kod ovde
 
+
+ class Timestamp<T> implements Comparable<Timestamp<T>>  {
+    private final LocalDateTime time;
+    private final T element;
+
+    public Timestamp(LocalDateTime time, T element) {
+        this.time = time;
+        this.element = element;
+    }
+    public LocalDateTime getTime(){
+        return time;
+    }
+    public T getElement(){
+        return element;
+    }
+    public boolean equals(Object o){
+        Timestamp<?> other = (Timestamp<?>) o;
+        return time.equals(other.time);
+    }
+
+    @Override
+    public String toString() {
+        String string = time + " " + element;
+        return string;
+    }
+
+     @Override
+     public int compareTo(Timestamp<T> o) {
+         return this.time.compareTo(o.time);
+
+     }
+ }
+class Scheduler<T>{
+    List<Timestamp<T>> timestamps;
+
+    public Scheduler() {
+        this.timestamps = new ArrayList<>();
+    }
+    public void add(Timestamp<T> t){
+        timestamps.add(t);
+    }
+    public boolean remove(Timestamp<T> t){
+        for (Timestamp<T> timestamp : timestamps) {
+            if(timestamp==t){
+                timestamps.remove(timestamp);
+                return true;
+            }
+        }
+        return false;
+
+    }
+    public Timestamp<T> next(){
+        Timestamp<T> result=null;
+        LocalDateTime now = LocalDateTime.now();
+        for (Timestamp<T> t : timestamps) {
+            if (t.getTime().isAfter(now)) {
+                if (result == null || t.getTime().isBefore(result.getTime())) {
+                    result = t;
+                }
+            }
+        }
+        return result;
+    }
+    public Timestamp<T> last(){
+        Timestamp<T> result=null;
+        LocalDateTime now = LocalDateTime.now();
+        for (Timestamp<T> t : timestamps) {
+            if (!t.getTime().isAfter(now)) {
+                if (result == null || t.getTime().isAfter(result.getTime())) {
+                    result = t;
+                }
+            }
+        }
+        return result;
+    }
+    public List<Timestamp<T>> getAll(LocalDateTime begin, LocalDateTime end){
+        List<Timestamp<T>> result= new ArrayList<>();
+        for (Timestamp<T> t : timestamps) {
+            if (!t.getTime().isBefore(begin) && !t.getTime().isAfter(end)) {
+                result.add(t);
+            }
+        }
+        return result;
+    }
+}

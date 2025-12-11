@@ -1,36 +1,13 @@
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
-
-class ByGenre implements Comparator<Movie>{
-
-    public int compare(Movie first, Movie other) {
-        return first.getGenre().compareTo(other.getGenre());
-    }
-}
-class ByTitle implements Comparator<Movie>{
-
-    public int compare(Movie first, Movie other) {
-        return first.getTitle().compareTo(other.getTitle());
-    }
-}
-class ByYear implements Comparator<Movie>{
-
-    public int compare(Movie first, Movie other) {
-        return Integer.compare(first.getYear(),other.getYear());
-    }
-}
-class ByRating implements Comparator<Movie>{
-
-    public int compare(Movie first, Movie other) {
-        return Double.compare(first.getAvgRating(),other.getAvgRating());
-    }
-}
 class Movie{
-    String title;
-    String genre;
-    int year;
-    double avgRating;
+    private String title;
+    private String genre;
+    private int year;
+    private double avgRating;
 
     public Movie(String title, String genre, int year, double avgRating) {
         this.title = title;
@@ -57,50 +34,42 @@ class Movie{
 
     @Override
     public String toString() {
-        return "%s, %s, %d, %s".formatted(this.title, this.genre, this.year, this.avgRating);
+        return String.format("%s, %s, %d, %.2f",title,genre,year,avgRating);
     }
 }
 class MovieTheater{
-    ArrayList<Movie> movies;
-    public void readMovies(InputStream is) throws IOException {
-        BufferedReader bufferedReader= new BufferedReader(new InputStreamReader(is));
-        String line;
-        List<String> parts= new ArrayList<>();
-        int n;
-        try {
-           n= Integer.parseInt(bufferedReader.readLine());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        int i=0;
-        while (true) {
-            try {
-                if(i<=3){
-                    if ((line=bufferedReader.readLine())!=null){
-                        parts.add(line);
-                        i++;
-                    };
-                    if(i==3){
-                        movies.add(new Movie(parts.get(0), parts.get(1),Integer.parseInt(parts.get(2)),Double.parseDouble(parts.get(3)) ));
-                    }
-                }else{
-                    i=0;
-                    parts=new ArrayList<>();
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
+    private ArrayList<Movie> movies;
 
+    public MovieTheater() {
+        this.movies = new ArrayList<>();
+    }
+
+    public void readMovies(InputStream is) throws IOException {
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is))) {
+            int n= Integer.parseInt(bufferedReader.readLine());
+            for(int i=0;i<n;i++){
+                String title=bufferedReader.readLine();
+                String genre=bufferedReader.readLine();
+                int year= Integer.parseInt(bufferedReader.readLine());
+                String[] parts=bufferedReader.readLine().split("\\s+");
+                double avgRating=0.0;
+                for (String part : parts) {
+                    avgRating+=Double.parseDouble(part);
+                }
+                avgRating/= parts.length;
+                movies.add(new Movie(title,genre,year,avgRating));
+            }
+
+        }
     }
     public void printByGenreAndTitle(){
-        movies.stream().sorted(new ByGenre()).sorted(new ByTitle()).forEach(Movie::toString);
+        movies.stream().sorted(Comparator.comparing(Movie::getGenre).thenComparing(Comparator.comparing(Movie::getTitle))).forEach(e-> System.out.println(e.toString()));
     }
     public void printByYearAndTitle(){
-        movies.stream().sorted(new ByYear()).sorted(new ByTitle()).forEach(Movie::toString);
+        movies.stream().sorted(Comparator.comparingInt(Movie::getYear).thenComparing(Comparator.comparing(Movie::getTitle))).forEach(e-> System.out.println(e.toString()));
     }
     public void printByRatingAndTitle(){
-        movies.stream().sorted(new ByRating()).sorted(new ByTitle()).forEach(Movie::toString);
+        movies.stream().sorted(Comparator.comparingDouble(Movie::getAvgRating).reversed().thenComparing(Comparator.comparing(Movie::getTitle))).forEach(e-> System.out.println(e.toString()));
     }
 
 }
