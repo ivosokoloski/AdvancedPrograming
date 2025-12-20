@@ -4,27 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac90adbe-fa65-4026-95ed-2a76d317eb1d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdvancedPrograming.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ComplexNumberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/F1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HealthyMealstest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InterestBearingAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Kalkulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MovieTheaterTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ResizableArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SchedulerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shapes1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StudentRecordsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TasksManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab.java" afterDir="false" />
+    <list default="true" id="ac90adbe-fa65-4026-95ed-2a76d317eb1d" name="Changes" comment="add">
+      <change afterPath="$PROJECT_DIR$/src/Anagrams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChatSystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TextCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ivosokoloski&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ivosokoloski/AdvancedPrograming.git&quot;,
+    &quot;accountId&quot;: &quot;17e1aca7-3aa7-498d-ad18-c0309b374ac7&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -78,6 +74,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="da" />
       <recent name="" />
     </key>
   </component>
@@ -141,11 +138,35 @@
       <workItem from="1763059671256" duration="34029000" />
       <workItem from="1764178140665" duration="144000" />
       <workItem from="1764190175509" duration="250000" />
+      <workItem from="1765330183114" duration="7723000" />
+      <workItem from="1765413710820" duration="9000" />
+      <workItem from="1766156745113" duration="21451000" />
     </task>
+    <task id="LOCAL-00001" summary="add">
+      <option name="closed" value="true" />
+      <created>1765413239845</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765413239845</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add">
+      <option name="closed" value="true" />
+      <created>1765413251705</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765413251705</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
