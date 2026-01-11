@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac90adbe-fa65-4026-95ed-2a76d317eb1d" name="Changes" comment="add">
-      <change afterPath="$PROJECT_DIR$/src/BankBalance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FakeApiPing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MojDDVTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NO_PUBLIC_CLASS_FOUND.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PatternTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TriviaGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WeatherApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/XMLTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ResizableArrayTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +53,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.DocumentTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.DocumentViewer.executor&quot;: &quot;Run&quot;,
     &quot;Application.HealthyMealstest.executor&quot;: &quot;Run&quot;,
     &quot;Application.Kalkulator.executor&quot;: &quot;Run&quot;,
     &quot;Application.LocalDateTimeTest.executor&quot;: &quot;Run&quot;,
@@ -77,7 +84,21 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HealthyMealstest">
+  <component name="RunManager" selected="Application.DocumentTest">
+    <configuration name="DocumentTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DocumentTest" />
+      <module name="AdvancedPrograming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DocumentViewer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DocumentViewer" />
+      <module name="AdvancedPrograming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HealthyMealstest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HealthyMealstest" />
       <module name="AdvancedPrograming" />
@@ -87,6 +108,20 @@
     </configuration>
     <configuration name="HealthyMealstest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HealthyMealstest" />
+      <module name="AdvancedPrograming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HealthyMealstest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HealthyMealstest" />
+      <module name="AdvancedPrograming" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocalTimeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LocalTimeTest" />
       <module name="AdvancedPrograming" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,6 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DocumentViewer" />
+        <item itemvalue="Application.DocumentTest" />
         <item itemvalue="Application.HealthyMealstest" />
         <item itemvalue="Application.LocalTimeTest" />
       </list>
@@ -139,7 +176,9 @@
       <workItem from="1764190175509" duration="250000" />
       <workItem from="1765330183114" duration="7723000" />
       <workItem from="1765413710820" duration="9000" />
-      <workItem from="1766156745113" duration="24080000" />
+      <workItem from="1766156745113" duration="26374000" />
+      <workItem from="1767543896177" duration="26099000" />
+      <workItem from="1767744029590" duration="2960000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <option name="closed" value="true" />
@@ -165,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1766272500270</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add">
+      <option name="closed" value="true" />
+      <created>1766275166433</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766275166433</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add">
+      <option name="closed" value="true" />
+      <created>1766275241016</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1766275241016</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
