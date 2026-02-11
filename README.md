@@ -1,73 +1,73 @@
 # Advanced Programming
 
-Овој репозиториум содржи решенија на **посложени програмерски задачи** од областа на *Advanced Programming*, со фокус на примена на напредни концепти, структури и техники во Java.
+This repository contains solutions to **more complex programming tasks** in the field of *Advanced Programming*, with a focus on applying advanced concepts, structures, and techniques in Java.
 
-## 📌 Опис
+## 📌 Description
 
-Проектите и задачите во овој репозиториум се насочени кон решавање на **комплексни проблеми**, каде што е потребно аналитичко размислување и правилна примена на **покомплексни програмски методи и архитектонски пристапи**.  
-Задачите опфаќаат сценарија кои симулираат реални проблеми и бараат ефикасни, скалабилни и чисти решенија.
+The projects and tasks in this repository are aimed at solving **complex problems**, where analytical thinking and proper application of **more advanced programming methods and architectural approaches** are required.  
+The tasks cover scenarios that simulate real-world problems and require efficient, scalable, and clean solutions.
 
-## 🧠 Клучни концепти и техники
+## 🧠 Key Concepts and Techniques
 
-Во рамки на репозиториумот се користат и обработуваат следните теми:
+Within the repository, the following topics are used and covered:
 
-### 🔹 Multithreading и Concurrency
-- Работа со `Thread`, `Runnable`, `Callable`
-- Thread pools и executor services
-- Синхронизација и конкурентен пристап до споделени ресурси
+### 🔹 Multithreading and Concurrency
+- Working with `Thread`, `Runnable`, `Callable`
+- Thread pools and executor services
+- Synchronization and concurrent access to shared resources
 
 ### 🔹 Generics
-- Генерички класи и методи
+- Generic classes and methods
 - Type safety
-- Подобра повторна употребливост на код
+- Better code reusability
 
 ### 🔹 Functional Programming
 - Lambda expressions
 - Function composition (`compose`, `andThen`)
-- Функции како аргументи и повратни вредности
+- Functions as arguments and return values
 
 ### 🔹 Collections & Streams
-- Напредно користење на Java Collections Framework
-- Stream API за декларативна обработка на податоци
+- Advanced use of the Java Collections Framework
+- Stream API for declarative data processing
 
 ### 🔹 Design Patterns
-- Примена на **објектно-ориентирани дизајн шаблони** за решавање на чести архитектонски проблеми
-- Користење на патерни со цел:
-  - подобра организација на кодот
-  - намалување на зависности
-  - полесно одржување и проширување
-- Примери на патерни кои се среќаваат во задачите:
+- Application of **object-oriented design patterns** for solving common architectural problems
+- Use of patterns with the goal of:
+  - better code organization
+  - reducing dependencies
+  - easier maintenance and extensibility
+- Examples of patterns encountered in the tasks:
   - **Singleton**
   - **Factory / Factory Method**
   - **Observer**
   - **Strategy**
   - **State**
-  - **Decorator** (каде што е соодветно)
+  - **Decorator** (where appropriate)
 
 ### 🔹 Design & Problem Solving
-- Модуларен и читлив код
-- Јасна поделба на одговорности
-- Фокус на ефикасност, коректност и добра архитектура
+- Modular and readable code
+- Clear separation of responsibilities
+- Focus on efficiency, correctness, and good architecture
 
-## 🎯 Цел на репозиториумот
+## 🎯 Repository Goal
 
-Целта на овој репозиториум е:
-- Продлабочување на знаењата по **напредно програмирање**
-- Практична примена на **Design Patterns** во реални задачи
-- Разбирање на комплексни програмски концепти преку конкретни примери
-- Подготовка за испити, колоквиуми и реални софтверски сценарија
-- Развивање на систематски пристап при решавање на проблеми
+The goal of this repository is:
+- Deepening knowledge in **advanced programming**
+- Practical application of **Design Patterns** in real tasks
+- Understanding complex programming concepts through concrete examples
+- Preparation for exams, midterms, and real software scenarios
+- Developing a systematic approach to problem solving
 
-## 🛠 Технологии
+## 🛠 Technologies
 
 - Java
 - Standard Java Libraries
 - Java Concurrency Utilities
 
-## 📂 Структура
+## 📂 Structure
 
-Секоја задача е организирана во посебен пакет или фолдер, со јасно дефинирана логика и коментари каде што е потребно, со цел полесно разбирање на решението.
+Each task is organized in a separate package or folder, with clearly defined logic and comments where necessary, in order to facilitate easier understanding of the solution.
 
 ---
 
-📌 *Репозиториумот е наменет за едукативни цели и демонстрација на напредни програмски концепти и дизајн шаблони.*
+📌 *The repository is intended for educational purposes and demonstration of advanced programming concepts and design patterns.*
